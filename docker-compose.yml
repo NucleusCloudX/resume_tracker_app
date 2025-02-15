@@ -5,10 +5,10 @@ services:
     image: mysql:8
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: patil
       MYSQL_DATABASE: resume_matcher
       # Remove MYSQL_USER since it's not allowed for the root user.
-      MYSQL_PASSWORD: password
+      MYSQL_PASSWORD: patil
     volumes:
       - db_data:/var/lib/mysql
     ports:
